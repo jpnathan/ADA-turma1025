@@ -1,9 +1,9 @@
-import { UserModel } from "./UserModel";
+import { UserRepository } from "./UserRepository";
 
-const userModel = new UserModel();
+const userRepository = new UserRepository();
 
-userModel.createUser('Evandro', 'Professor', 'professor-evandro@gmail.com');
+userRepository.create('Evandro', 'Professor', 'professor-evandro@gmail.com');
 
 export {
-    userModel,
+    userRepository,
 };

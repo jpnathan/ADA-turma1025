@@ -1,7 +1,7 @@
-import { userModel } from "../models";
+import { userRepository } from "../models";
 
 export class UserController {
     public findAll() {
-        return userModel.getAllUsers();
+        return userRepository.findAll();
     }
 }
