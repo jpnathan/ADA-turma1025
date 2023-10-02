@@ -36,4 +36,8 @@ export class UserRepository {
     public findAll(): Promise<IUser[]> {
         return this.model.find({});
     }
+
+    public destroy(id: string): Promise<any> {
+        return this.model.deleteOne({ id });
+    }
 }
